@@ -6,7 +6,7 @@
 
 import pandas as pd
 
-dataset=pd.read_csv('wines.csv')
+dataset=pd.read_csv('/home/wines.csv')
 Y=dataset['Class']
 y=pd.get_dummies(Y)
 X=dataset.drop('Class',axis=1)
