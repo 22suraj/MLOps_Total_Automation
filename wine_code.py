@@ -37,7 +37,7 @@ model.add(Dense(units=3,activation='softmax'))
 
 model.compile(optimizer=RMSprop(learning_rate=0.001),loss='categorical_crossentropy',metrics=['accuracy'])
 
-accuracy=model.fit(X,y,epochs=100)
+accuracy=model.fit(X,y,epochs=100,verbose=0)
 
 model.save('winemodel.h5')
 accuracy=accuracy.history['accuracy'][-1:][0]
