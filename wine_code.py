@@ -39,7 +39,7 @@ model.compile(optimizer=RMSprop(learning_rate=0.001),loss='categorical_crossentr
 
 accuracy=model.fit(X,y,epochs=100,verbose=0)
 
-model.save('winemodel.h5')
+model.save('/home/winemodel.h5')
 accuracy=accuracy.history['accuracy'][-1:][0]
 print(accuracy)
 
